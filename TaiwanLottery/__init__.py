@@ -5,6 +5,8 @@ import requests
 
 from TaiwanLottery import utils
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class TaiwanLotteryCrawler():
     NO_DATA = '查無資料'
