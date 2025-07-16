@@ -12,7 +12,7 @@ class TaiwanLotteryCrawler():
     COUNT_OF_GROUP_1 = 6
 
     def get_lottery_result(self, url):
-        response = requests.get(url)
+        response = requests.get(url, verify=False)
         return response.json()
 
     # 威力彩
